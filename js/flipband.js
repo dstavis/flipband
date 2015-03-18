@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	setupPage()
-	$('body').click(did)
+	setup()
+	$('body').click(flip)
 })
 
-var setupPage = function(){
-	if (localStorage["flipped"] == "true"){
+var setup = function(){
+	if (localStorage.getCacheItem("flipped") == "flipped"){
 		$('body').addClass('done')
 	}
 	else {
@@ -13,11 +13,13 @@ var setupPage = function(){
 	}
 }
 
-var did = function(){
-	if (localStorage["flipped"] == "false"){
+var flip = function(){
+	if (localStorage.getCacheItem("flipped") == "flipped"){
+		console.log("I'm already flipped yo. Wait until tomorrow!")
+	} else {
 		$('body').removeClass('not-done')
 		$('.message').html("")
 		$('body').addClass('done')
-		localStorage["flipped"] = true;
+		localStorage.setCacheItem("flipped", "flipped", {days: 1})
 	}
 }
