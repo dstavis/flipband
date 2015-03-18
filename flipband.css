@@ -1,0 +1,51 @@
+
+/*******************************************
+	COLORS
+********************************************/
+
+.not-done{
+	/* Black */
+	background-color: #060F1E;
+}
+
+.done {
+	/* Green */
+	background-color: #B2C864;
+}
+
+.done .message {
+	background: url('images/check.png') no-repeat center;
+	display: inline-block;
+	height: 70px;
+	width: 250px;
+}
+
+.message{
+	color: white;
+}
+
+/*******************************************
+	POSITIONING
+********************************************/
+
+html,body {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.center {
+  position: relative;
+  top: 42%;
+  left: 50%;
+  /*transform: translateY(-45%);*/
+  transform: translateX(-10%);
+}
+
+/*******************************************
+	TEXT
+********************************************/
+
+.message{
+	font-size: 5em;
+}
