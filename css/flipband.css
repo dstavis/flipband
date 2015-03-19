@@ -1,4 +1,8 @@
 
+#proof-holder{
+	display: none;
+}
+
 /*******************************************
 	COLORS
 ********************************************/
@@ -22,6 +26,7 @@
 
 .message{
 	color: white;
+	font-family: 'Montserrat';
 }
 
 /*******************************************
@@ -40,6 +45,10 @@ html,body {
   left: 50%;
   /*transform: translateY(-45%);*/
   transform: translateX(-10%);
+}
+
+#proof{
+	width: 225px;
 }
 
 /*******************************************
