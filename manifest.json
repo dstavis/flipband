@@ -1,7 +1,7 @@
 {
-  "name": "Flipband",
-  "version": "1.0",
-  "description": "The easiest way to remember your goals",
+  "name": "FlipTab",
+  "version": "1.0.1",
+  "description": "The simplest way to remember your goals",
   "manifest_version" : 2,
   "browser_action": {
     "default_icon": "images/icon.png",
